@@ -47,9 +47,9 @@ export default function App() {
           <Navbar className="navbar" bg="dark" expand="lg" sticky="top">
             <Container>
               <Navbar.Brand href="/" className="navbar-brand align-items-center">
-                <img alt="" src={GenixLogo} />
+                {/* <img alt="" src={GenixLogo} /> */}
                 <span>GENIX</span>
-                <span className="navbar-brand-subtitle"> Wrap</span>
+                <span className="navbar-brand-subtitle"> Converter</span>
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse>
@@ -123,7 +123,7 @@ export default function App() {
                 <br />
                 <h5 className="mb-3 text-center">
                   <p className="mb-0">
-                    1 Genix = 1 Genix BEP-20 token
+                    1 GENIX = 1 GENIX BEP-20 token
                   </p>
                 </h5>
                 <br />
@@ -155,13 +155,13 @@ export default function App() {
               </h5>
             </Container>
           </section>
-          <section className="section-footer text-center">
+          {/* <section className="section-footer text-center">
             <Row>
               <span>
-                {/* <b>© The Genix Project 2021 - 2024</b> */}
+                <b>© The Genix Project 2021 - 2024</b>
               </span >
             </Row >
-          </section >
+          </section > */}
         </div >
       )}
     </Router >
