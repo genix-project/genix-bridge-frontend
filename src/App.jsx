@@ -18,7 +18,7 @@ import {
 // Assets.
 import FadeInSection from "./FadeInSection";
 //TODO: picture
-import GenixLogo from "./assets/img/Genix.png";
+import GenixLogo from "./assets/img/dingocoin.png";
 
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";

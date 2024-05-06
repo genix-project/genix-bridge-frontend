@@ -706,7 +706,7 @@ function BscController() {
     <div>
       <header className="App-header">
         <Container>
-          <a
+          {/* <a
             className="button button1"
             target="_blank"
             rel="noreferrer"
@@ -721,22 +721,22 @@ function BscController() {
             href="https://poocoin.app/tokens/0x9b208b117b2c4f76c1534b6f006b033220a681a4"
           >
             wDingocoin (BSC) Price
-          </a>
+          </a> */}
           <a
             className="button button2"
             target="_blank"
             rel="noreferrer"
             href={`https://bscscan.com/token/${CONTRACT_ADDRESS}`}
           >
-            wDingocoin (BSC) Contract
+            Genix BEP-20 token (BSC) Contract
           </a>
           <a
             className="button button4"
             target="_blank"
             rel="noreferrer"
-            href="https://dingocoin.com"
+            href="https://genix.cx"
           >
-            Visit Dingocoin
+            Visit Genix
           </a>
           <br />
           <OnboardingButton onAccountChange={onAccountChange} />
@@ -748,10 +748,10 @@ function BscController() {
           <section className="section-b">
             <h3>
               Convert{" "}
-              <a target="_blank" href="https://dingocoin.com" rel="noreferrer">
-                Dingocoin
+              <a target="_blank" href="https://genix.cx" rel="noreferrer">
+                GENIX
               </a>{" "}
-              → wDingocoin
+              → GENIX BEP-20 token
             </h3>
             {hasMintDepositAddress === null && <div className="loader"></div>}
             {hasMintDepositAddress === false &&
@@ -761,7 +761,7 @@ function BscController() {
                   {!isCreatingMintDepositAddress ? (
                     <p>
                       <button onClick={onCreateDepositAddress}>
-                        Create your Dingocoin deposit address
+                        Create your GENIX deposit address
                       </button>
                     </p>
                   ) : (
@@ -821,21 +821,21 @@ function BscController() {
                   </tbody>
                 </table>
                 <br />
-                <p>(* Deposits require 120 confirmations (about 2 hours).)</p>
-                <p>
+                <p>(* Deposits require 120 confirmations (about 4 weeks).)</p>
+                {/* <p>
                   (* The amount here is after a fee deduction of 10 Dingocoins +
                   1% of total deposited amount thereafter)
-                </p>
+                </p> */}
               </div>
             )}
           </section>
 
           <hr />
 
-          <section className="section-b">
+          {/* <section className="section-b">
             <h3>
               Convert wDingocoin →{" "}
-              <a target="_blank" href="https://dingocoin.com" rel="noreferrer">
+              <a target="_blank" href="https://genix.cx" rel="noreferrer">
                 Dingocoin
               </a>
             </h3>
@@ -860,10 +860,10 @@ function BscController() {
                         <u>
                           <a
                             target="_blank"
-                            href="https://dingocoin.com"
+                            href="https://genix.cx"
                             rel="noreferrer"
                           >
-                            Dingocoin
+                            GENIX
                           </a>{" "}
                           MAINNET address
                         </u>
@@ -950,21 +950,12 @@ function BscController() {
                         </tbody>
                       </table>
                       <br />
-                      {/* <p>
-                        <b>
-                          (Withdrawals may take <u>up to 24 hours</u> to
-                          dispense)
-                        </b>
-                      </p> */}
-                      {/* <p>
-                        (Each withdrawal is subject to a fee of 10 Dingocoins +
-                        1% of burned amount thereafter)
-                      </p> */}
                     </div>
                   )}
                 </div>
               )}
-          </section>
+          </section> */}
+          {/* </section> */}
         </div>
       )}
 
