@@ -99,19 +99,27 @@ export default function App() {
           <section className="features">
             <Container className="py-5 mt-5">
               <FadeInSection>
-                {/* <h2 className="mb-3 text-center">wDingocoin Custodian</h2>
-                <h5 className="mb-3 text-center"><strong>What Are Wrapped Coins?</strong></h5>
+                <h2 className="mb-3 text-center">Genix Converter</h2>
+                <h5 className="mb-3 text-center"><strong>Whats this?</strong></h5>
                 <h5 className="mb-3 ">
-                  <p>A wrapped crypto token is a converted version of a cryptocurrency or asset that functions on a network other
+                  <p>
+                    This is a portal that allows the conversion of native GENIX to BEP-20 standard token GENIX.
+                    Genix future is as a token. 
+                  </p>
+                  <p>
+                    This portal will remain open for N !timeframe!. Once deposit is made you will be able to Mint your tokens
+                    in 1~ month. If you have any questions please contact us in Discord. ~insert link here~
+                  </p>
+                  {/* <p>A wrapped crypto token is a converted version of a cryptocurrency or asset that functions on a network other
                     than the original asset’s blockchain. Each wrapped token has the same value as the asset it represents and is
                     easily interchangeable.</p>
                   <p>Wrapped Coins essentially represent crypto assets on non-native blockchains. These coins
                     are “wrapped” because they are inserted into a wrapper or digital vault that allows the wrapped version to operate
                     on a different blockchain.
-                  </p>
-                </h5> */}
+                  </p> */}
+                </h5>
                 <br />
-                <h5 className="mb-3 text-center">Exchange Rate</h5>
+                {/* <h5 className="mb-3 text-center">Exchange Rate</h5> */}
                 <br />
                 <h5 className="mb-3 text-center">
                   <p className="mb-0">
