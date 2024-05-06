@@ -1,9 +1,5 @@
 import "./App.scss";
 import BscController from "./BscController";
-import SolController from "./SolController";
-import MumbaiController from "./MumbaiController";
-import MaticController from "./MaticController";
-import ReactGA from "react-ga";
 
 // Controls.
 import {
@@ -18,7 +14,7 @@ import {
 // Assets.
 import FadeInSection from "./FadeInSection";
 //TODO: picture
-import GenixLogo from "./assets/img/Genix.png";
+import GenixLogo from "./assets/img/dingocoin.png";
 
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
@@ -51,9 +47,9 @@ export default function App() {
           <Navbar className="navbar" bg="dark" expand="lg" sticky="top">
             <Container>
               <Navbar.Brand href="/" className="navbar-brand align-items-center">
-                <img alt="" src={GenixLogo} />
+                {/* <img alt="" src={GenixLogo} /> */}
                 <span>GENIX</span>
-                <span className="navbar-brand-subtitle"> Wrap</span>
+                <span className="navbar-brand-subtitle"> Converter</span>
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse>
@@ -78,9 +74,6 @@ export default function App() {
                     <h4 className="title text-center">
                       Convert to BEP-20 token.
                     </h4>
-                    <h6 className="text-center">
-                      {/* Stable, Realiable & Great Exchange Rate */}
-                    </h6>
                   </div>
                 </div>
               </div>
@@ -90,11 +83,7 @@ export default function App() {
                   <div className="d-flex flex-column me-auto mt-4 mb-auto">
                     <h2 className="title text-center">
                       Convert to BEP-20 token.
-                    </h2><br />
-                    <h4 className="text-center">
-                      {/* Stable, Realiable & Great Exchange Rate */}
-                    </h4>
-
+                    </h2>
                   </div>
                 </div>
               </div>
@@ -103,43 +92,45 @@ export default function App() {
           <section className="features">
             <Container className="py-5 mt-5">
               <FadeInSection>
-                {/* <h2 className="mb-3 text-center">wDingocoin Custodian</h2>
-                <h5 className="mb-3 text-center"><strong>What Are Wrapped Coins?</strong></h5>
+                <h2 className="mb-3 text-center">Genix Converter</h2>
+                <h5 className="mb-3 text-center"><strong>Whats this?</strong></h5>
                 <h5 className="mb-3 ">
-                  <p>A wrapped crypto token is a converted version of a cryptocurrency or asset that functions on a network other
-                    than the original asset’s blockchain. Each wrapped token has the same value as the asset it represents and is
-                    easily interchangeable.</p>
-                  <p>Wrapped Coins essentially represent crypto assets on non-native blockchains. These coins
-                    are “wrapped” because they are inserted into a wrapper or digital vault that allows the wrapped version to operate
-                    on a different blockchain.
+                  <p>
+                    This is a portal that allows the conversion of native GENIX to BEP-20 standard token GENIX.
+                    Genix future is as a token. 
                   </p>
-                </h5> */}
+                  <p>
+                    This portal will remain open for N !timeframe!. Once deposit is made you will be able to mint your tokens
+                    in 1~ month. If you have any questions please contact us in Discord. ~insert link here~
+                  </p>
+                </h5>
                 <br />
-                <h5 className="mb-3 text-center">Exchange Rate</h5>
                 <br />
                 <h5 className="mb-3 text-center">
                   <p className="mb-0">
-                    1 Genix = 1 Genix BEP-20 token
+                    1 GENIX = 1 GENIX BEP-20 token
                   </p>
                 </h5>
                 <br />
                 <h5 className="mb-3 text-center">
-                  <DropdownButton
-                    title={
-                      controller === null
-                        ? "Select Wrapped Network"
-                        : controller
-                    }
-                    className="mb-2"
+                  <button
+                    onClick={() => {
+                      setController("Binance Smart Chain (BSC)");
+                    }}
+                    className="btn btn-primary"
                   >
-                    <Dropdown.Item
-                      onClick={() => {
-                        setController("Binance Smart Chain (BSC)");
-                      }}
-                    >
-                      Binance Smart Chain (BSC)
-                    </Dropdown.Item>
-                  </DropdownButton>
+                    Enter
+                  </button>
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
                 </h5>
               </FadeInSection>
             </Container>
@@ -154,7 +145,7 @@ export default function App() {
           <section className="section-footer text-center">
             <Row>
               <span>
-                {/* <b>© The Genix Project 2021 - 2024</b> */}
+                <b>© The Genix Project 2024 - 2024</b>
               </span >
             </Row >
           </section >
