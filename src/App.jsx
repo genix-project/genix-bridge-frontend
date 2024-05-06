@@ -107,7 +107,7 @@ export default function App() {
                     Genix future is as a token. 
                   </p>
                   <p>
-                    This portal will remain open for N !timeframe!. Once deposit is made you will be able to Mint your tokens
+                    This portal will remain open for N !timeframe!. Once deposit is made you will be able to mint your tokens
                     in 1~ month. If you have any questions please contact us in Discord. ~insert link here~
                   </p>
                   {/* <p>A wrapped crypto token is a converted version of a cryptocurrency or asset that functions on a network other
@@ -128,7 +128,15 @@ export default function App() {
                 </h5>
                 <br />
                 <h5 className="mb-3 text-center">
-                  <DropdownButton
+                  <button
+                    onClick={() => {
+                      setController("Binance Smart Chain (BSC)");
+                    }}
+                    className="btn btn-primary"
+                  >
+                    Set Controller to Binance Smart Chain (BSC)
+                  </button>
+                  {/* <DropdownButton
                     title={
                       controller === null
                         ? "Select Wrapped Network"
@@ -143,7 +151,7 @@ export default function App() {
                     >
                       Binance Smart Chain (BSC)
                     </Dropdown.Item>
-                  </DropdownButton>
+                  </DropdownButton> */}
                 </h5>
               </FadeInSection>
             </Container>
@@ -155,13 +163,13 @@ export default function App() {
               </h5>
             </Container>
           </section>
-          {/* <section className="section-footer text-center">
+          <section className="section-footer text-center">
             <Row>
               <span>
-                <b>© The Genix Project 2021 - 2024</b>
+                <b>© The Genix Project 2024 - 2024</b>
               </span >
             </Row >
-          </section > */}
+          </section >
         </div >
       )}
     </Router >
