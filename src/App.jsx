@@ -121,6 +121,16 @@ export default function App() {
                   >
                     Enter
                   </button>
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
                 </h5>
               </FadeInSection>
             </Container>
