@@ -134,7 +134,7 @@ export default function App() {
                     }}
                     className="btn btn-primary"
                   >
-                    Set Controller to Binance Smart Chain (BSC)
+                    Enter
                   </button>
                   {/* <DropdownButton
                     title={
