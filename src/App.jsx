@@ -1,9 +1,5 @@
 import "./App.scss";
 import BscController from "./BscController";
-import SolController from "./SolController";
-import MumbaiController from "./MumbaiController";
-import MaticController from "./MaticController";
-import ReactGA from "react-ga";
 
 // Controls.
 import {
