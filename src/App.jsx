@@ -126,11 +126,6 @@ export default function App() {
                   <br />
                   <br />
                   <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
                 </h5>
               </FadeInSection>
             </Container>
