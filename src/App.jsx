@@ -38,10 +38,12 @@ export default function App() {
   {/* Maint Mode Toggle  'const maintenance' = -- true = on  | false = off */ }
   const maintenance = false;
   const testnetEnabled = false;
+  setController("Binance Smart Chain (BSC)")
   return (
     <Router>
       {maintenance ? (
         <Maintenance />
+        
       ) : (
         <div className="App">
           <Navbar className="navbar" bg="dark" expand="lg" sticky="top">
@@ -113,14 +115,14 @@ export default function App() {
                 </h5>
                 <br />
                 <h5 className="mb-3 text-center">
-                  <button
+                  {/* <button
                     onClick={() => {
                       setController("Binance Smart Chain (BSC)");
                     }}
                     className="btn btn-primary"
                   >
                     Enter
-                  </button>
+                  </button> */}
                 </h5>
               </FadeInSection>
             </Container>
