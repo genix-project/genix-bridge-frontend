@@ -661,22 +661,6 @@ function BscController() {
     <div>
       <header className="App-header">
         <Container>
-          {/* <a
-            className="button button1"
-            target="_blank"
-            rel="noreferrer"
-            href="https://pancakeswap.finance/swap?outputCurrency=0x9b208b117B2C4F76C1534B6f006b033220a681A4"
-          >
-            Buy wDingocoin (BSC)
-          </a>
-          <a
-            className="button button1"
-            target="_blank"
-            rel="noreferrer"
-            href="https://poocoin.app/tokens/0x9b208b117b2c4f76c1534b6f006b033220a681a4"
-          >
-            wDingocoin (BSC) Price
-          </a> */}
           <a
             className="button button2"
             target="_blank"
@@ -776,141 +760,12 @@ function BscController() {
                   </tbody>
                 </table>
                 <br />
-                <p>(* Deposits require 120 confirmations (about 4 weeks).)</p>
-                {/* <p>
-                  (* The amount here is after a fee deduction of 10 Dingocoins +
-                  1% of total deposited amount thereafter)
-                </p> */}
+                <p>(* Deposits require 10,080 block confirmations (2~ weeks).)</p>
               </div>
             )}
           </section>
 
           <hr />
-
-          {/* <section className="section-b">
-            <h3>
-              Convert wDingocoin →{" "}
-              <a target="_blank" href="https://genix.cx" rel="noreferrer">
-                Dingocoin
-              </a>
-            </h3>
-            {aliveNodes !== null &&
-              aliveNodes.length !== AUTHORITY_NODES.length && (
-                <p>
-                  <span style={{ color: "red" }}>
-                    <b>
-                      Withdrawals temporarily unavailable: all authority nodes
-                      required to be online.
-                    </b>
-                  </span>
-                </p>
-              )}
-            {aliveNodes !== null &&
-              aliveNodes.length === AUTHORITY_NODES.length && (
-                <div>
-                  <p>
-                    <span style={{ color: "red" }}>
-                      IMPORTANT: Please ensure that you have entered the correct{" "}
-                      <b>
-                        <u>
-                          <a
-                            target="_blank"
-                            href="https://genix.cx"
-                            rel="noreferrer"
-                          >
-                            GENIX
-                          </a>{" "}
-                          MAINNET address
-                        </u>
-                      </b>{" "}
-                      and <b>amount</b>.
-                    </span>
-                    <br />
-                    <span style={{ color: "red" }}>
-                      Any incorrect entry is irreversible and will not be
-                      refunded.
-                    </span>
-                  </p>
-                  <p>
-                    <a
-                      target="_blank"
-                      href="https://dingocoin.com"
-                      rel="noreferrer"
-                    >
-                      Dingocoin
-                    </a>{" "}
-                    withdrawal address:{" "}
-                    <input
-                      className="inputlong"
-                      value={burnDestination}
-                      onChange={onBurnDestinationChange}
-                      placeHolder={"(e.g. DQBx7G4aozdqYFCv2dU4kacaEcPzwg8dkZ)"}
-                    ></input>
-                  </p>
-                  <p>
-                    wDingocoins to convert:{" "}
-                    <input
-                      className="inputshort"
-                      value={burnAmount}
-                      onChange={onBurnAmountChange}
-                      placeHolder="(e.g. 123450.69)"
-                    ></input>
-                  </p>
-                  <p>
-                    <button onClick={onBurn}>Authorize and burn</button>
-                  </p>
-                  {burnHistory === null && <div className="loader"></div>}
-                  {burnHistory !== null && burnHistory.length > 0 && (
-                    <div>
-                      <table>
-                        <thead>
-                          <tr>
-                            <th className="long-header">Withdrawal address</th>
-                            <th className="short-header">Burned</th>
-                            <th className="short-header">Withdrawal status</th>
-                            <th className="short-header">Action</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          {burnHistory.map((x) => {
-                            return (
-                              <tr key={x.burnIndex}>
-                                <td className="long-header">
-                                  {x.burnDestination}
-                                </td>
-                                <td className="short-header">
-                                  {fromSatoshi(x.burnAmount)}
-                                </td>
-                                <td className="short-header">
-                                  {x.status === null
-                                    ? "Not submitted"
-                                    : x.status === "SUBMITTED"
-                                    ? "Submitted"
-                                    : x.status === "APPROVED"
-                                    ? "Approved"
-                                    : "UNKNOWN"}
-                                </td>
-                                <td className="short-header">
-                                  {x.status !== null ? null : (
-                                    <button
-                                      onClick={() => onWithdraw(x.burnIndex)}
-                                    >
-                                      Submit for withdrawal
-                                    </button>
-                                  )}
-                                </td>
-                              </tr>
-                            );
-                          })}
-                        </tbody>
-                      </table>
-                      <br />
-                    </div>
-                  )}
-                </div>
-              )}
-          </section> */}
-          {/* </section> */}
         </div>
       )}
 
@@ -945,7 +800,7 @@ function BscController() {
           <div>
             <table>
               <tbody>
-                {/* <tr>
+                {<tr>
                   <td className="long-header">
                     <a
                       target="_blank"
@@ -964,13 +819,13 @@ function BscController() {
                       ).toString()
                     )}
                   </td>
-                </tr> */}
-                {/* <tr>
-                  <td className="long-header">wDingocoin in Circulation</td>
+                </tr> }
+                <tr>
+                  <td className="long-header">Genix tokens in Circulation</td>
                   <td className="short-header">
                     {fromSatoshi(stats.totalSupply)}
                   </td>
-                </tr> */}
+                </tr>
                 <br />
                 <tr>
                   <td className="long-header">Genix Converted</td>
@@ -982,23 +837,6 @@ function BscController() {
                     )}
                   </td>
                 </tr>
-                {/* <tr>
-                  <td className="long-header">Dingocoin Withdrawn</td>
-                  <td className="short-header">
-                    {fromSatoshi(stats.withdrawals.totalApprovedAmount)}
-                  </td>
-                </tr> */}
-                {/* <tr>
-                  <td className="long-header">Dingocoin Pending Withdraw</td>
-                  <td className="short-header">
-                    {fromSatoshi(
-                      (
-                        BigInt(stats.withdrawals.totalApprovableAmount) -
-                        BigInt(stats.withdrawals.totalApprovedAmount)
-                      ).toString()
-                    )}
-                  </td>
-                </tr> */}
               </tbody>
             </table>
             <br />
