@@ -50,17 +50,17 @@ const isValidDingocoinAddress = (x) => {
 
 const AUTHORITY_NODES = [
   {
-    location: "n0.genix.cx",
+    location: "n1.genix.cx",
     port: 8443,
     walletAddress: "0x43f7FD52F02D5960cE85AB6fAf22Cfdd300D7457",
   },
   {
-    location: "n1.genix.cx",
+    location: "n2.genix.cx",
     port: 8443,
     walletAddress: "0xfA3ba79a0266Fd0354547E4807b19bC8Cef0696C",
   },
   {
-    location: "n2.genix.cx",
+    location: "n3.genix.cx",
     port: 8443,
     walletAddress: "0x3279f7B244F0194fd359D5AC29359ca676193aDb",
   }
