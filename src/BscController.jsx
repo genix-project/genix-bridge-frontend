@@ -458,51 +458,6 @@ function BscController() {
       setMintDepositAddresses([]);
       setHasMintDepositAddress(false);
     }
-
-    if (aliveNodes.length === AUTHORITY_NODES.length) {
-      const burnHistories = (
-        await Promise.all(
-          aliveNodes
-            .map((i) => AUTHORITY_NODES[i])
-            .map((x, i) =>
-              post(`${authorityLink(x)}/queryBurnHistory`, {
-                burnAddress: wallet,
-              })
-            )
-        )
-      ).map((x) => x.data.burnHistory);
-      const maxLength = Math.max(...burnHistories.map((x) => x.length));
-
-      const burnHistory = [];
-      for (let i = 0; i < maxLength; i++) {
-        burnHistory.push(burnHistories.filter((x) => x.length > 0)[0][i]);
-        burnHistory[i].burnIndex = i;
-        if (
-          burnHistories.filter((x) => x.length > 0).length <
-          burnHistories.length
-        ) {
-          burnHistory[i].status = null;
-        } else if (
-          burnHistories.filter((x) => x[i].status === null).length > 0
-        ) {
-          burnHistory[i].status = null;
-        } else if (
-          burnHistories.filter((x) => x[i].status === "SUBMITTED").length > 0
-        ) {
-          burnHistory[i].status = "SUBMITTED";
-        } else if (
-          burnHistories.filter((x) => x[i].status === "APPROVED").length !==
-          burnHistories.length
-        ) {
-          throw new Error("Invalid burn histories");
-        } else {
-          burnHistory[i].status = "APPROVED";
-        }
-      }
-
-      burnHistory.reverse();
-      setBurnHistory(burnHistory);
-    }
   };
 
   React.useEffect(() => {
