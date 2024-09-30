@@ -33,12 +33,12 @@ export default function App() {
   }, []);
   React.useEffect(() => {}, [location]); */}
 
-  const [controller, setController] = React.useState(null);
+  // const [controller, setController] = React.useState(null);
+  const controller = "Binance Smart Chain (BSC)"
 
   {/* Maint Mode Toggle  'const maintenance' = -- true = on  | false = off */ }
   const maintenance = false;
   const testnetEnabled = false;
-  setController("Binance Smart Chain (BSC)")
   return (
     <Router>
       {maintenance ? (
