@@ -103,7 +103,7 @@ export default function App() {
                   </p>
                   <p>
                     This portal will remain open for at minimum 1 year. Once deposit is made you will be able to mint your tokens
-                    in 2~ weeks. If you have any questions please contact us in [Discord](https://discord.gg/RSc7CKr5mb).
+                    in 2~ weeks. If you have any questions please contact us in (Discord)[https://discord.gg/RSc7CKr5mb].
                   </p>
                 </h5>
                 <br />
