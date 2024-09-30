@@ -52,17 +52,17 @@ const AUTHORITY_NODES = [
   {
     location: "n0.genix.cx",
     port: 8443,
-    walletAddress: "0x0",
+    walletAddress: "0x43f7FD52F02D5960cE85AB6fAf22Cfdd300D7457",
   },
   {
     location: "n1.genix.cx",
     port: 8443,
-    walletAddress: "0x0",
+    walletAddress: "0xfA3ba79a0266Fd0354547E4807b19bC8Cef0696C",
   },
   {
     location: "n2.genix.cx",
     port: 8443,
-    walletAddress: "0x0",
+    walletAddress: "0x3279f7B244F0194fd359D5AC29359ca676193aDb",
   }
 ];
 const AUTHORITY_THRESHOLD = 2;
@@ -70,7 +70,7 @@ const authorityLink = (x) => {
   return `https://${x.location}:${x.port}`;
 };
 
-const CONTRACT_ADDRESS = "0x0";
+const CONTRACT_ADDRESS = "0x4476d4f30a5e56a825620269dbe6fdc060429ff0";
 
 const CONTRACT_ABI = [
   { inputs: [], stateMutability: "nonpayable", type: "constructor" },
@@ -418,7 +418,7 @@ function BscController() {
     return `https://${node.location}:${node.port}`;
   };
   const stableAuthorityLink = () => {
-    const node = AUTHORITY_NODES[4];
+    const node = AUTHORITY_NODES[0];
     return `https://${node.location}:${node.port}`;
   };
 
