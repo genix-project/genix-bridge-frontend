@@ -65,9 +65,9 @@ export default function App() {
               </Navbar.Collapse>
             </Container>
           </Navbar>
-          <header id="home" className="masthead">
+          {/* <header id="home" className="masthead">
             <Container>
-              {/* Desktop view */}
+              Desktop view
               <div className="d-none d-lg-block">
                 <div className="d-flex flex-row py-5">
                   <div className="d-flex flex-column me-auto my-4">
@@ -76,9 +76,9 @@ export default function App() {
                     </h4>
                   </div>
                 </div>
-              </div>
+              </div> */}
               {/* Mobile */}
-              <div className="d-lg-none">
+              {/* <div className="d-lg-none">
                 <div className="d-flex flex-column py-5">
                   <div className="d-flex flex-column me-auto mt-4 mb-auto">
                     <h2 className="title text-center">
@@ -88,7 +88,7 @@ export default function App() {
                 </div>
               </div>
             </Container>
-          </header>
+          </header> */}
           <section className="features">
             <Container className="py-5 mt-5">
               <FadeInSection>
@@ -121,11 +121,6 @@ export default function App() {
                   >
                     Enter
                   </button>
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
                 </h5>
               </FadeInSection>
             </Container>
