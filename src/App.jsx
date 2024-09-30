@@ -102,8 +102,8 @@ export default function App() {
                     Genix future is as a token. 
                   </p>
                   <p>
-                    This portal will remain open for N !timeframe!. Once deposit is made you will be able to mint your tokens
-                    in 1~ month. If you have any questions please contact us in Discord. ~insert link here~
+                    This portal will remain open for at minimum 1 year. Once deposit is made you will be able to mint your tokens
+                    in 2~ weeks. If you have any questions please contact us in [Discord](https://discord.gg/RSc7CKr5mb).
                   </p>
                 </h5>
                 <br />
@@ -115,14 +115,6 @@ export default function App() {
                 </h5>
                 <br />
                 <h5 className="mb-3 text-center">
-                  {/* <button
-                    onClick={() => {
-                      setController("Binance Smart Chain (BSC)");
-                    }}
-                    className="btn btn-primary"
-                  >
-                    Enter
-                  </button> */}
                 </h5>
               </FadeInSection>
             </Container>
