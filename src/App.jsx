@@ -67,30 +67,6 @@ export default function App() {
               </Navbar.Collapse>
             </Container>
           </Navbar>
-          {/* <header id="home" className="masthead">
-            <Container>
-              Desktop view
-              <div className="d-none d-lg-block">
-                <div className="d-flex flex-row py-5">
-                  <div className="d-flex flex-column me-auto my-4">
-                    <h4 className="title text-center">
-                      Convert to BEP-20 token.
-                    </h4>
-                  </div>
-                </div>
-              </div> */}
-              {/* Mobile */}
-              {/* <div className="d-lg-none">
-                <div className="d-flex flex-column py-5">
-                  <div className="d-flex flex-column me-auto mt-4 mb-auto">
-                    <h2 className="title text-center">
-                      Convert to BEP-20 token.
-                    </h2>
-                  </div>
-                </div>
-              </div>
-            </Container>
-          </header> */}
           <section className="features">
             <Container className="py-5 mt-5">
               <FadeInSection>

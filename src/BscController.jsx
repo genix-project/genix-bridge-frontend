@@ -760,7 +760,7 @@ function BscController() {
                   </tbody>
                 </table>
                 <br />
-                <p>(* Deposits require 10,080 block confirmations (2~ weeks).)</p>
+                <p>** Deposits require 10,080 block confirmations (2~ weeks). **</p>
               </div>
             )}
           </section>
