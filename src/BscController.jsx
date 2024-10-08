@@ -809,7 +809,7 @@ function BscController() {
                     >
                       Genix
                     </a>{" "}
-                    Holdings
+                    Deposits
                   </td>
                   <td className="short-header">
                     {fromSatoshi(
